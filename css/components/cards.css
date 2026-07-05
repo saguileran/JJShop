@@ -14,6 +14,7 @@
   display: grid;
   gap: var(--space-3);
   padding: var(--space-5);
+  padding-left: var(--space-6);
 }
 
 .card__image {

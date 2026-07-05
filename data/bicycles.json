@@ -10,13 +10,13 @@
     "status": "Disponible"
   },
   {
-    "id": "montana-paramo-29",
+    "id": "montaña-paramo-29",
     "name": "Paramo MTB 29",
-    "category": "montana",
+    "category": "montaña",
     "price": "$2.350.000 COP",
     "image": "assets/images/catalog-mountain.png",
     "description": "Lista para caminos destapados, subidas exigentes y salidas de fin de semana.",
-    "features": ["Rin 29", "Suspension delantera", "Frenos hidraulicos"],
+    "features": ["Rin 29", "Suspension delantera", "Frenos hidráulicos"],
     "status": "Nueva"
   },
   {
@@ -28,5 +28,45 @@
     "description": "Asistencia electrica suave para moverte mas lejos sin perder sensacion de pedaleo.",
     "features": ["Motor 350W", "Autonomia hasta 55 km", "Bateria extraible"],
     "status": "Reserva"
+  },
+  {
+    "id": "parte-freno-hidraulico",
+    "name": "Kit de freno hidráulico",
+    "category": "partes",
+    "price": "$320.000 COP",
+    "image": "assets/images/service-brakes.png",
+    "description": "Conjunto de manetas y pinzas para mejorar potencia y tacto de frenado.",
+    "features": ["Par delantero y trasero", "Purgado inicial incluido", "Compatible con MTB y urbana"],
+    "status": "Stock"
+  },
+  {
+    "id": "parte-transmision-11v",
+    "name": "Grupo de transmisión 11V",
+    "category": "partes",
+    "price": "$790.000 COP",
+    "image": "assets/images/service-transmission.png",
+    "description": "Juego para actualizar cambios y mantener una transmisión precisa y suave.",
+    "features": ["Cassette 11 velocidades", "Cadena reforzada", "Cambios compatibles"],
+    "status": "Nuevo"
+  },
+  {
+    "id": "repuesto-pastillas-freno",
+    "name": "Pastillas de freno premium",
+    "category": "repuestos",
+    "price": "$45.000 COP",
+    "image": "assets/images/service-brakes.png",
+    "description": "Repuesto de desgaste rápido para mantener frenado firme y silencioso.",
+    "features": ["Compuesto orgánico", "Bajo ruido", "Alta duración"],
+    "status": "Repuesto"
+  },
+  {
+    "id": "repuesto-cadena-11v",
+    "name": "Cadena 11 velocidades",
+    "category": "repuestos",
+    "price": "$110.000 COP",
+    "image": "assets/images/service-transmission.png",
+    "description": "Cadena de reemplazo para mantener cambios limpios y reducir saltos.",
+    "features": ["Tratamiento anticorrosión", "Compatible con 11V", "Instalación rápida"],
+    "status": "Repuesto"
   }
 ]

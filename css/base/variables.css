@@ -1,11 +1,12 @@
 /*
-  Design tokens for Alamacen de Bicicletas JJ.
+  Design tokens for Almacén de Bicicletas JJ.
 */
 
 :root {
   color-scheme: light;
 
-  --color-ink: #18211f;
+  --color-ink: #182119;
+  --color-strong-dark-bg: #ffffff;
   --color-muted: #60706b;
   --color-soft: #f4f7f1;
   --color-surface: #ffffff;

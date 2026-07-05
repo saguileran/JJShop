@@ -1,6 +1,6 @@
 # Architecture
 
-Alamacen de Bicicletas JJ is a static multi-page website designed for GitHub Pages.
+Almacén de Bicicletas JJ is a static multi-page website designed for GitHub Pages.
 
 ## Principles
 

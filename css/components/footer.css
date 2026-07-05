@@ -13,6 +13,10 @@
   color: #c8d5d1;
 }
 
+.site-footer strong {
+  color: var(--color-strong-dark-bg);
+}
+
 .site-footer__grid {
   display: grid;
   gap: var(--space-6);

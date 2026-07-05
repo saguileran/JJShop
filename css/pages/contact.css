@@ -75,4 +75,5 @@
 .review-card small {
   color: var(--color-muted);
   font-weight: 800;
+  text-align: right;
 }

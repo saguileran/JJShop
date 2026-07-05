@@ -64,7 +64,7 @@ export default class ContactForm extends Component {
 
   createWhatsAppMessage(formData) {
     return [
-      "Hola, Alamacen de Bicicletas JJ. Quiero hacer una solicitud:",
+      "Hola, Almacén de Bicicletas JJ. Quiero hacer una solicitud:",
       "",
       `Nombre: ${formData.get("name")}`,
       `Telefono: ${formData.get("phone")}`,

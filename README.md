@@ -1,10 +1,10 @@
-# Alamacen de Bicicletas JJ
+# Almacén de Bicicletas JJ
 
 Production-quality static website for a fictional bicycle shop and repair workshop in Bogota.
 
 ## Features
 
-- Multi-page Spanish website: Inicio, Catalogo, Reparaciones, Nosotros, Contacto and FAQ.
+- Multi-page Spanish website: Inicio, Catalogo,reparaciónes, Nosotros, Contacto and FAQ.
 - Modular CSS architecture with base, layout, component and page layers.
 - ES6 module JavaScript with small single-responsibility classes.
 - Responsive layout for desktop, laptop, tablet and mobile.

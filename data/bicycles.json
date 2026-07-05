@@ -1,0 +1,32 @@
+[
+  {
+    "id": "urbana-andina-01",
+    "name": "Andina Urbana 7V",
+    "category": "urbana",
+    "price": "$1.490.000 COP",
+    "image": "assets/images/catalog-urban.png",
+    "description": "Bicicleta comoda para trayectos diarios, ciclovia y movilidad urbana.",
+    "features": ["Marco de aluminio", "Cambios Shimano 7 velocidades", "Guardabarros y parrilla"],
+    "status": "Disponible"
+  },
+  {
+    "id": "montana-paramo-29",
+    "name": "Paramo MTB 29",
+    "category": "montana",
+    "price": "$2.350.000 COP",
+    "image": "assets/images/catalog-mountain.png",
+    "description": "Lista para caminos destapados, subidas exigentes y salidas de fin de semana.",
+    "features": ["Rin 29", "Suspension delantera", "Frenos hidraulicos"],
+    "status": "Nueva"
+  },
+  {
+    "id": "electrica-cumbre",
+    "name": "Cumbre E-Assist",
+    "category": "electrica",
+    "price": "$4.900.000 COP",
+    "image": "assets/images/catalog-electric.png",
+    "description": "Asistencia electrica suave para moverte mas lejos sin perder sensacion de pedaleo.",
+    "features": ["Motor 350W", "Autonomia hasta 55 km", "Bateria extraible"],
+    "status": "Reserva"
+  }
+]

@@ -1,0 +1,50 @@
+/*
+  Forms and validation states.
+*/
+
+.form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field label {
+  color: var(--color-ink);
+  font-weight: 800;
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
+  color: var(--color-ink);
+  inline-size: 100%;
+  padding: 0.85rem 1rem;
+}
+
+.field textarea {
+  min-block-size: 140px;
+  resize: vertical;
+}
+
+.form__status {
+  border-radius: var(--radius-2);
+  font-weight: 800;
+  padding: var(--space-3);
+}
+
+.form__status[data-state="error"] {
+  background: #fff0ed;
+  color: var(--color-danger);
+}
+
+.form__status[data-state="success"] {
+  background: #eaf8f0;
+  color: var(--color-success);
+}

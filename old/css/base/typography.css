@@ -1,0 +1,442 @@
+/*==========================================================
+    TYPOGRAPHY.CSS
+    Bike Shop Design System
+==========================================================*/
+
+/*==========================================================
+    IMPORT GOOGLE FONTS
+==========================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*==========================================================
+    BODY
+==========================================================*/
+
+body{
+
+    font-family:var(--font-body);
+
+    font-size:var(--fs-body);
+
+    font-weight:400;
+
+    line-height:1.7;
+
+    color:var(--text-primary);
+
+    background:var(--surface-primary);
+
+}
+
+/*==========================================================
+    HEADINGS
+==========================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-heading);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:var(--text-primary);
+
+    letter-spacing:-.02em;
+
+}
+
+h1{
+
+    font-size:var(--fs-display);
+
+    margin-bottom:var(--space-6);
+
+}
+
+h2{
+
+    font-size:var(--fs-title);
+
+    margin-bottom:var(--space-5);
+
+}
+
+h3{
+
+    font-size:var(--fs-subtitle);
+
+    margin-bottom:var(--space-4);
+
+}
+
+h4{
+
+    font-size:1.30rem;
+
+    margin-bottom:var(--space-3);
+
+}
+
+h5{
+
+    font-size:1.1rem;
+
+    margin-bottom:var(--space-3);
+
+}
+
+h6{
+
+    font-size:1rem;
+
+    margin-bottom:var(--space-2);
+
+}
+
+/*==========================================================
+    PARAGRAPHS
+==========================================================*/
+
+p{
+
+    margin-bottom:var(--space-5);
+
+    color:var(--text-secondary);
+
+    max-width:70ch;
+
+}
+
+/*==========================================================
+    LINKS
+==========================================================*/
+
+a{
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    color:var(--color-primary-700);
+
+}
+
+/*==========================================================
+    STRONG
+==========================================================*/
+
+strong{
+
+    font-weight:700;
+
+    color:var(--text-primary);
+
+}
+
+em{
+
+    font-style:italic;
+
+}
+
+/*==========================================================
+    SMALL
+==========================================================*/
+
+small{
+
+    font-size:var(--fs-sm);
+
+    color:var(--text-muted);
+
+}
+
+/*==========================================================
+    BLOCKQUOTE
+==========================================================*/
+
+blockquote{
+
+    border-left:5px solid var(--color-primary-700);
+
+    padding-left:var(--space-5);
+
+    margin:var(--space-8) 0;
+
+    font-size:1.2rem;
+
+    font-style:italic;
+
+    color:var(--text-secondary);
+
+}
+
+/*==========================================================
+    CODE
+==========================================================*/
+
+code{
+
+    font-family:var(--font-mono);
+
+    background:var(--color-gray-100);
+
+    padding:.20rem .45rem;
+
+    border-radius:var(--radius-sm);
+
+    font-size:.92rem;
+
+}
+
+pre{
+
+    overflow:auto;
+
+    background:#1F2937;
+
+    color:white;
+
+    padding:var(--space-6);
+
+    border-radius:var(--radius-md);
+
+}
+
+pre code{
+
+    background:none;
+
+    color:inherit;
+
+    padding:0;
+
+}
+
+/*==========================================================
+    LISTS
+==========================================================*/
+
+ul.default-list{
+
+    list-style:disc;
+
+    padding-left:1.5rem;
+
+}
+
+ol.default-list{
+
+    list-style:decimal;
+
+    padding-left:1.5rem;
+
+}
+
+.default-list li{
+
+    margin-bottom:.6rem;
+
+}
+
+/*==========================================================
+    TABLE
+==========================================================*/
+
+table{
+
+    width:100%;
+
+}
+
+th{
+
+    text-align:left;
+
+    font-weight:700;
+
+}
+
+th,
+td{
+
+    padding:1rem;
+
+}
+
+/*==========================================================
+    HORIZONTAL RULE
+==========================================================*/
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--color-gray-200);
+
+    margin:var(--space-8) 0;
+
+}
+
+/*==========================================================
+    TEXT UTILITIES
+==========================================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+.text-primary{
+
+    color:var(--color-primary-800);
+
+}
+
+.text-secondary{
+
+    color:var(--text-secondary);
+
+}
+
+.text-white{
+
+    color:white;
+
+}
+
+.text-muted{
+
+    color:var(--text-muted);
+
+}
+
+/*==========================================================
+    FONT WEIGHT
+==========================================================*/
+
+.fw-light{
+
+    font-weight:300;
+
+}
+
+.fw-normal{
+
+    font-weight:400;
+
+}
+
+.fw-medium{
+
+    font-weight:500;
+
+}
+
+.fw-semibold{
+
+    font-weight:600;
+
+}
+
+.fw-bold{
+
+    font-weight:700;
+
+}
+
+.fw-black{
+
+    font-weight:800;
+
+}
+
+/*==========================================================
+    DISPLAY TITLES
+==========================================================*/
+
+.display-1{
+
+    font-size:clamp(3rem,8vw,6rem);
+
+    line-height:1.05;
+
+}
+
+.display-2{
+
+    font-size:clamp(2.5rem,6vw,5rem);
+
+}
+
+.display-3{
+
+    font-size:clamp(2rem,5vw,4rem);
+
+}
+
+/*==========================================================
+    SECTION TITLE
+==========================================================*/
+
+.section-title{
+
+    max-width:750px;
+
+    margin:0 auto var(--space-10);
+
+    text-align:center;
+
+}
+
+.section-title__badge{
+
+    display:inline-block;
+
+    padding:.55rem 1.25rem;
+
+    border-radius:999px;
+
+    background:var(--color-primary-50);
+
+    color:var(--color-primary-800);
+
+    font-weight:700;
+
+    margin-bottom:var(--space-4);
+
+}
+
+.section-title__heading{
+
+    margin-bottom:var(--space-5);
+
+}
+
+.section-title__description{
+
+    margin:0 auto;
+
+}

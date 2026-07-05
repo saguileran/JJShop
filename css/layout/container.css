@@ -1,0 +1,42 @@
+/*
+  Reusable containers and page spacing.
+*/
+
+.container {
+  inline-size: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-8);
+}
+
+.section--compact {
+  padding-block: var(--space-6);
+}
+
+.section__header {
+  display: grid;
+  gap: var(--space-3);
+  margin-block-end: var(--space-6);
+  max-inline-size: 950px;
+}
+
+.section__eyebrow {
+  color: var(--color-primary);
+  font-size: var(--step--1);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-header {
+  background: linear-gradient(120deg, #eff5eb, #fff9e8);
+  padding-block: calc(var(--header-height) + var(--space-7)) var(--space-7);
+}
+
+.page-header .container {
+  display: grid;
+  gap: var(--space-4);
+  max-inline-size: 960px;
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedal & Piñón | Taller de Bicicletas en Bogotá</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Variables de Color y Diseño */
+        :root {
+            --primary-color: #00adb5; /* Turquesa fresco */
+            --dark-bg: #222831; /* Fondo oscuro profesional */
+            --dark-card: #393e46; /* Fondo de tarjetas */
+            --light-text: #eeeeee;
+            --font-titles: 'Montserrat', sans-serif;
+            --font-text: 'Open Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-text);
+            background-color: var(--light-text);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-titles);
+        }
+
+        /* Navegación */
+        header {
+            background-color: var(--dark-bg);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(34, 40, 49, 0.8), rgba(34, 40, 49, 0.8)), url('https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--light-text);
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 173, 181, 0.4);
+        }
+
+        /* Secciones Generales */
+        section {
+            padding: 5rem 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--dark-bg);
+        }
+
+        /* Sobre Mí / Nosotros */
+        .about-container {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .about-image img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Servicios */
+        .services-bg {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+        }
+        .services-bg .section-title { color: var(--light-text); }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--dark-card);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Galería */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Reseñas de Google */
+        .reviews-bg {
+            background-color: #f8f9fa;
+        }
+
+        .reviews-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .review-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            max-width: 350px;
+            position: relative;
+        }
+
+        .google-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #4285F4;
+            font-size: 1.5rem;
+        }
+
+        .stars {
+            color: #fbbc05;
+            margin-bottom: 10px;
+        }
+
+        /* Contacto y Mapa */
+        .contact-container {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info, .contact-map {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-info input, .contact-info textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: var(--font-text);
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-container { flex-direction: column; }
+            .nav-links { display: none; /* Ideal para agregar un menú hamburguesa luego */ }
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-bicycle"></i> Pedal&Piñón
+        </a>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#resenas">Reseñas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Tu bici, en las <span>mejores manos</span></h1>
+        <p>Mantenimiento profesional, rápido y de confianza en el corazón de Bogotá. Nos apasionan las bicicletas tanto como a ti.</p>
+        <a href="#contacto" class="btn">Reserva tu cita ahora</a>
+    </section>
+
+    <section id="nosotros">
+        <h2 class="section-title">Sobre Nuestro Taller</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Expertos rodando por Bogotá</h3>
+                <br>
+                <p>En <strong>Pedal & Piñón</strong> entendemos que tu bicicleta es más que un medio de transporte; es tu escape, tu ejercicio y tu pasión por la ciudad.</p>
+                <br>
+                <p>Contamos con más de 10 años de experiencia arreglando desde bicicletas urbanas para la Ciclovía dominical, hasta máquinas de alto rendimiento para subir a Patios o El Verjón. Trabajamos con transparencia, utilizando repuestos de alta calidad y entregando siempre a tiempo.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&w=800&q=80" alt="Mecánico reparando bicicleta">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services-bg">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Mantenimiento General</h3>
+                <p>Lavado ecológico, lubricación, ajuste de cambios y frenos, revisión de presión. Ideal para mantener tu bici al 100%.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Despinche y Llantas</h3>
+                <p>Arreglo rápido de pinchazos, tubelizado de llantas y cambio de cubiertas para asfalto o MTB.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-paint-roller"></i>
+                <h3>Pintura y Restauración</h3>
+                <p>Devuélvele la vida a esa bici antigua. Pintura al horno, calcomanías personalizadas y cromados.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-box-open"></i>
+                <h3>Armado a la Carta</h3>
+                <p>¿Compraste piezas en internet? Tráelas y nosotros te armamos la bicicleta de tus sueños con precisión milimétrica.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2 class="section-title">Nuestro Trabajo</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=500&q=60" alt="Bicicleta 1">
+            <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=500&q=60" alt="Bicicleta 2">
+            <img src="https://images.unsplash.com/photo-1620138546344-7b2c36395ec9?auto=format&fit=crop&w=500&q=60" alt="Bicicleta 3">
+            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=500&q=60" alt="Bicicleta 4">
+            <img src="https://images.unsplash.com/photo-1576858273611-66521ffb1bc3?auto=format&fit=crop&w=500&q=60" alt="Bicicleta 5">
+            <img src="https://images.unsplash.com/photo-1528629297340-d1d466945dc5?auto=format&fit=crop&w=500&q=60" alt="Bicicleta 6">
+        </div>
+    </section>
+
+    <section id="resenas" class="reviews-bg">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <i class="fa-brands fa-google google-icon"></i>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Excelente servicio. Lleve mi MTB antes de subir a Patios y quedó volando. El mecánico fue súper honesto con lo que realmente necesitaba cambiar."</p>
+                <br>
+                <strong>- Camilo R.</strong>
+            </div>
+            <div class="review-card">
+                <i class="fa-brands fa-google google-icon"></i>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Muy profesionales. El taller es impecable y tienen repuestos de las mejores marcas. Los recomiendo a ojo cerrado en Bogotá."</p>
+                <br>
+                <strong>- Andrea M.</strong>
+            </div>
+            <div class="review-card">
+                <i class="fa-brands fa-google google-icon"></i>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>"Precios justos y atención rápida. Me salvaron de un apuro con mi bici urbana para ir a la universidad."</p>
+                <br>
+                <strong>- David G.</strong>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="btn" style="background-color: white; color: var(--dark-bg); border: 2px solid var(--dark-bg);">Ver más en Google Maps</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 class="section-title">Visítanos o Escríbenos</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Envíanos un mensaje</h3>
+                <br>
+                <form action="#">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo" required>
+                    <textarea rows="4" placeholder="¿En qué podemos ayudarte? (Mantenimiento, cotización...)" required></textarea>
+                    <button type="submit" class="btn" style="border:none; cursor:pointer;">Enviar Mensaje</button>
+                </form>
+                <br><br>
+                <h3>Datos de Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Carrera 15 # 85-XX, Bogotá, Colombia</p>
+                <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp disponible</p>
+            </div>
+            <div class="contact-map">
+                <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.592186851416!2d-74.0620891!3d4.673898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aed1a3b11ef%3A0x6b6c0e0b3c675d69!2sParque%20de%20la%2093!5e0!3m2!1ses!2sco!4v1689254000000!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2><i class="fa-solid fa-bicycle"></i> Pedal & Piñón</h2>
+        <p>Tu taller de bicicletas de confianza en Bogotá.</p>
+        <div style="margin-top: 1rem; font-size: 1.5rem; gap: 15px; display: flex; justify-content: center;">
+            <i class="fa-brands fa-instagram" style="cursor: pointer;"></i>
+            <i class="fa-brands fa-facebook" style="cursor: pointer;"></i>
+            <i class="fa-brands fa-tiktok" style="cursor: pointer;"></i>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2026 Pedal & Piñón. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Alamacen de Bicicletas JJ: venta de bicicletas urbanas, MTB y electricas, con taller experto de reparacion en Bogota.">
+    <title>Alamacen de Bicicletas JJ | Tienda y taller de bicicletas</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navegacion principal">
+        <a class="navbar__brand" href="./index.html" aria-label="Alamacen de Bicicletas JJ inicio">
+          <span class="navbar__logo" aria-hidden="true"><img src="./assets/icons/bike.svg" alt=""></span>
+          <span>Alamacen de Bicicletas JJ</span>
+        </a>
+        <button class="icon-button navbar__toggle" type="button" data-nav-toggle aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+          <span aria-hidden="true">Menu</span>
+        </button>
+        <ul class="navbar__links" id="menu-principal" data-nav-menu>
+          <li><a class="navbar__link" href="./index.html" aria-current="page">Inicio</a></li>
+          <li><a class="navbar__link" href="./pages/catalogo.html">Catalogo</a></li>
+          <li><a class="navbar__link" href="./pages/reparaciones.html">Reparaciones</a></li>
+          <li><a class="navbar__link" href="./pages/nosotros.html">Nosotros</a></li>
+          <li><a class="navbar__link" href="./pages/contacto.html">Contacto</a></li>
+          <li><a class="navbar__link" href="./pages/faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content" data-reveal>
+            <p class="section__eyebrow">Tienda + taller especializado</p>
+            <h1>Bicicletas listas para la ciudad, la montana y la vida diaria.</h1>
+            <p>En Alamacen de Bicicletas JJ vendemos, ajustamos y reparamos bicicletas con criterio técnico, repuestos confiables y atencion clara desde el primer diagnostico.</p>
+            <div class="cluster">
+              <a class="button button--primary" href="./pages/catalogo.html">Ver catalogo</a>
+              <a class="button button--secondary" href="./pages/contacto.html">Agendar taller</a>
+            </div>
+          </div>
+          <figure class="hero__media" data-reveal>
+            <img src="./assets/images/hero-workshop.png" alt="Taller moderno con bicicletas, herramientas y mecanicos preparando una bicicleta" loading="eager">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section surface">
+        <div class="container">
+          <div class="section__header">
+            <p class="section__eyebrow">Lo esencial, bien hecho</p>
+            <h2>Compra y mantenimiento sin vueltas.</h2>
+            <p>Te ayudamos a elegir la bicicleta correcta, mantenerla segura y mejorarla cuando tu forma de montar cambia.</p>
+          </div>
+          <div class="grid grid--3">
+            <article class="card" data-reveal>
+              <img class="card__image" src="./assets/images/catalog-urban.png" alt="Bicicleta urbana en un entorno de ciudad" loading="lazy">
+              <div class="card__body">
+                <h3>Bicicletas urbanas</h3>
+                <p>Modelos comodos para movilidad diaria, ciclovia, estudio y trabajo.</p>
+                <a class="button button--ghost" href="./pages/catalogo.html">Explorar</a>
+              </div>
+            </article>
+            <article class="card" data-reveal>
+              <img class="card__image" src="./assets/images/service-tuneup.png" alt="Revision completa de bicicleta en banco de taller" loading="lazy">
+              <div class="card__body">
+                <h3>Taller certificado</h3>
+                <p>Ajustes, frenos, transmision, ruedas, suspension y mantenimiento preventivo.</p>
+                <a class="button button--ghost" href="./pages/reparaciones.html">Servicios</a>
+              </div>
+            </article>
+            <article class="card" data-reveal>
+              <img class="card__image" src="./assets/images/catalog-electric.png" alt="Bicicleta electrica en una ruta urbana" loading="lazy">
+              <div class="card__body">
+                <h3>Asesoria honesta</h3>
+                <p>Recomendaciones segun presupuesto, ruta, talla, postura y frecuencia de uso.</p>
+                <a class="button button--ghost" href="./pages/nosotros.html">Conocenos</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section service-strip">
+        <div class="container split">
+          <div>
+            <p class="section__eyebrow">Revision rapida</p>
+            <h2>Diagnostico inicial el mismo dia.</h2>
+            <p>Trae tu bici al taller o escribenos con fotos del problema. Te damos una ruta clara de reparacion antes de tocar una sola pieza.</p>
+          </div>
+          <div class="hero__stats" aria-label="Indicadores del taller">
+            <div class="metric"><strong>24 h</strong><span>para diagnosticos simples</span></div>
+            <div class="metric"><strong>+800</strong><span>bicis atendidas al ano</span></div>
+            <div class="metric"><strong>6</strong><span>meses de garantia en ajustes</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <p class="section__eyebrow">Clientes frecuentes</p>
+            <h2>Para quien pedalea todos los dias.</h2>
+          </div>
+          <div class="grid grid--3">
+            <blockquote class="card card__body" data-reveal>
+              <p>"Me ajustaron frenos y cambios antes de una rodada larga. La bici quedo silenciosa y precisa."</p>
+              <strong>Laura M.</strong>
+            </blockquote>
+            <blockquote class="card card__body" data-reveal>
+              <p>"No intentaron venderme la mas cara. Me recomendaron una urbana que si uso todos los dias."</p>
+              <strong>Daniel R.</strong>
+            </blockquote>
+            <blockquote class="card card__body" data-reveal>
+              <p>"Buen diagnostico, tiempos claros y repuestos explicados sin tecnicismos innecesarios."</p>
+              <strong>Camila P.</strong>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div>
+            <h2 class="site-footer__title">Alamacen de Bicicletas JJ</h2>
+            <p>Tienda y taller de bicicletas en Bogota. Movilidad, deporte y mantenimiento con criterio técnico.</p>
+          </div>
+          <div><h3 class="site-footer__title">Sitio</h3><ul><li><a href="./pages/catalogo.html">Catalogo</a></li><li><a href="./pages/reparaciones.html">Reparaciones</a></li><li><a href="./pages/faq.html">FAQ</a></li></ul></div>
+          <div><h3 class="site-footer__title">Contacto</h3><ul><li><a href="tel:+573001112233">+57 300 111 2233</a></li><li><a href="mailto:hola@bicicletasandina.test">hola@bicicletasandina.test</a></li><li>Bogota D.C.</li></ul></div>
+          <div><h3 class="site-footer__title">Horario</h3><ul><li>Lun a Vie: 9:00 - 18:30</li><li>Sab: 9:00 - 15:00</li><li>Dom: con cita previa</li></ul></div>
+        </div>
+        <p class="site-footer__bottom">&copy; <span data-current-year>2026</span> Alamacen de Bicicletas JJ. Sitio. Desarrollo por <a href="https://saguileran.github.io/" target="_blank" rel="noopener noreferrer" >saguileran</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

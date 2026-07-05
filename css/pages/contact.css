@@ -1,0 +1,78 @@
+/*
+  Contact page layout.
+*/
+
+.contact-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-1);
+  padding: var(--space-5);
+}
+
+.contact-shop-image {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-2);
+  inline-size: 100%;
+  margin-block-end: var(--space-5);
+  object-fit: cover;
+}
+
+.contact-list {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.map-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+}
+
+.map-card iframe {
+  border: 0;
+  display: block;
+  inline-size: 100%;
+  min-block-size: 420px;
+}
+
+.review-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-1);
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+}
+
+.review-card__video {
+  border-radius: var(--radius-2);
+  display: block;
+  inline-size: 100%;
+  max-block-size: 220px;
+  object-fit: cover;
+}
+
+.review-card__header {
+  align-items: start;
+  display: flex;
+  gap: var(--space-3);
+  justify-content: space-between;
+}
+
+.review-card__header span {
+  color: var(--color-accent-strong);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.review-card small {
+  color: var(--color-muted);
+  font-weight: 800;
+}

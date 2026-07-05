@@ -1,0 +1,573 @@
+/*==========================================================
+    LAYOUT.CSS
+    Bike Shop Design System
+==========================================================*/
+
+
+
+/*==========================================================
+    SECTIONS
+==========================================================*/
+
+.section{
+
+    padding-block:var(--space-12);
+
+}
+
+.section-sm{
+
+    padding-block:var(--space-9);
+
+}
+
+.section-lg{
+
+    padding-block:9rem;
+
+}
+
+.section-xl{
+
+    padding-block:12rem;
+
+}
+
+/*==========================================================
+    DISPLAY
+==========================================================*/
+
+.flex{
+
+    display:flex;
+
+}
+
+.inline-flex{
+
+    display:inline-flex;
+
+}
+
+.grid{
+
+    display:grid;
+
+}
+
+.block{
+
+    display:block;
+
+}
+
+.inline{
+
+    display:inline;
+
+}
+
+.none{
+
+    display:none;
+
+}
+
+/*==========================================================
+    FLEX
+==========================================================*/
+
+.flex-center{
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flex-between{
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.flex-around{
+
+    justify-content:space-around;
+
+    align-items:center;
+
+}
+
+.flex-evenly{
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+}
+
+.flex-start{
+
+    justify-content:flex-start;
+
+}
+
+.flex-end{
+
+    justify-content:flex-end;
+
+}
+
+.items-center{
+
+    align-items:center;
+
+}
+
+.items-start{
+
+    align-items:flex-start;
+
+}
+
+.items-end{
+
+    align-items:flex-end;
+
+}
+
+.flex-column{
+
+    flex-direction:column;
+
+}
+
+.flex-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+/*==========================================================
+    GRID
+==========================================================*/
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.grid-auto{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+}
+
+.grid-auto-sm{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+}
+
+.grid-auto-lg{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(380px,1fr));
+
+}
+
+/*==========================================================
+    GAP
+==========================================================*/
+
+.gap-1{
+
+    gap:var(--space-1);
+
+}
+
+.gap-2{
+
+    gap:var(--space-2);
+
+}
+
+.gap-3{
+
+    gap:var(--space-3);
+
+}
+
+.gap-4{
+
+    gap:var(--space-4);
+
+}
+
+.gap-5{
+
+    gap:var(--space-5);
+
+}
+
+.gap-6{
+
+    gap:var(--space-6);
+
+}
+
+.gap-8{
+
+    gap:var(--space-8);
+
+}
+
+.gap-10{
+
+    gap:var(--space-10);
+
+}
+
+/*==========================================================
+    WIDTH
+==========================================================*/
+
+.w-100{
+
+    width:100%;
+
+}
+
+.w-auto{
+
+    width:auto;
+
+}
+
+.max-content{
+
+    width:max-content;
+
+}
+
+.min-content{
+
+    width:min-content;
+
+}
+
+/*==========================================================
+    HEIGHT
+==========================================================*/
+
+.h-100{
+
+    height:100%;
+
+}
+
+.min-vh{
+
+    min-height:100vh;
+
+}
+
+/*==========================================================
+    POSITION
+==========================================================*/
+
+.relative{
+
+    position:relative;
+
+}
+
+.absolute{
+
+    position:absolute;
+
+}
+
+.fixed{
+
+    position:fixed;
+
+}
+
+.sticky{
+
+    position:sticky;
+
+}
+
+.top-0{
+
+    top:0;
+
+}
+
+.left-0{
+
+    left:0;
+
+}
+
+.right-0{
+
+    right:0;
+
+}
+
+.bottom-0{
+
+    bottom:0;
+
+}
+
+/*==========================================================
+    OVERFLOW
+==========================================================*/
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.overflow-auto{
+
+    overflow:auto;
+
+}
+
+/*==========================================================
+    BORDER RADIUS
+==========================================================*/
+
+.radius-sm{
+
+    border-radius:var(--radius-sm);
+
+}
+
+.radius{
+
+    border-radius:var(--radius-md);
+
+}
+
+.radius-lg{
+
+    border-radius:var(--radius-lg);
+
+}
+
+.radius-xl{
+
+    border-radius:var(--radius-xl);
+
+}
+
+.radius-pill{
+
+    border-radius:999px;
+
+}
+
+.circle{
+
+    border-radius:50%;
+
+}
+
+/*==========================================================
+    SHADOW
+==========================================================*/
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.shadow-xl{
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/*==========================================================
+    BACKGROUND
+==========================================================*/
+
+.bg-white{
+
+    background:white;
+
+}
+
+.bg-light{
+
+    background:var(--surface-secondary);
+
+}
+
+.bg-dark{
+
+    background:var(--surface-dark);
+
+}
+
+.bg-primary{
+
+    background:var(--color-primary-800);
+
+}
+
+.bg-gradient{
+
+    background:var(--gradient-primary);
+
+}
+
+/*==========================================================
+    OBJECT FIT
+==========================================================*/
+
+.object-cover{
+
+    object-fit:cover;
+
+}
+
+.object-contain{
+
+    object-fit:contain;
+
+}
+
+/*==========================================================
+    ASPECT RATIO
+==========================================================*/
+
+.aspect-square{
+
+    aspect-ratio:1;
+
+}
+
+.aspect-video{
+
+    aspect-ratio:16/9;
+
+}
+
+.aspect-photo{
+
+    aspect-ratio:4/3;
+
+}
+
+/*==========================================================
+    Z INDEX
+==========================================================*/
+
+.z-dropdown{
+
+    z-index:var(--z-dropdown);
+
+}
+
+.z-sticky{
+
+    z-index:var(--z-sticky);
+
+}
+
+.z-modal{
+
+    z-index:var(--z-modal);
+
+}
+
+/*==========================================================
+    CURSOR
+==========================================================*/
+
+.pointer{
+
+    cursor:pointer;
+
+}
+
+/*==========================================================
+    VISIBILITY
+==========================================================*/
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.visible{
+
+    display:block;
+
+}
+
+/*==========================================================
+    IMAGE
+==========================================================*/
+
+.img-responsive{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}

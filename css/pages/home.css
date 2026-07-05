@@ -1,0 +1,55 @@
+/*
+  Home page sections.
+*/
+
+.hero {
+  background: linear-gradient(120deg, #edf5e9 0%, #fff7df 100%);
+  padding-block: calc(var(--header-height) + var(--space-6)) var(--space-8);
+}
+
+.hero__grid {
+  align-items: center;
+  display: grid;
+  gap: var(--space-7);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+}
+
+.hero__content {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.hero__media {
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+}
+
+.hero__media img {
+  aspect-ratio: 5 / 4;
+  inline-size: 100%;
+  object-fit: cover;
+}
+
+.hero__stats {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-strip {
+  background: var(--color-dark);
+  color: #fff;
+}
+
+.service-strip p,
+.service-strip h2 {
+  color: #fff;
+}
+
+@media (max-width: 880px) {
+  .hero__grid,
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+}

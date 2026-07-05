@@ -1,0 +1,57 @@
+/*==========================================================
+    BUTTONS
+==========================================================*/
+
+.button{
+
+    --button-bg:var(--color-primary);
+
+    --button-color:#ffffff;
+
+    --button-hover:var(--color-primary-dark);
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.75rem;
+
+    padding:.9rem 1.8rem;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:var(--button-bg);
+
+    color:var(--button-color);
+
+    font-weight:600;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:
+
+        transform .25s,
+
+        background .25s,
+
+        color .25s,
+
+        box-shadow .25s;
+
+    white-space:nowrap;
+
+    user-select:none;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
